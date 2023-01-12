@@ -147,11 +147,17 @@ console.log(result);
 
 
 
-//suspectsArray.forEach(function(randomSuspect));
 
-
-
-function pickMystery() {}
+function pickMystery() {
+    const suspect = selectRandom(suspectsArray);
+    const weapon = selectRandom(weaponsArray);
+    const room  = selectRandom(roomsArray);
+    return {
+        suspect: suspect,
+        weapon: weapon,
+        room: room
+    }
+}
 
 
 // ITERATION 3
